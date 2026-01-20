@@ -1,0 +1,58 @@
+============================================================
+        GUIA DO CLIENTE - LANDING PAGE FLOW TECH
+============================================================
+
+Este guia orienta como realizar alterações básicas de conteúdo 
+em sua nova Landing Page de forma rápida e segura.
+
+1. COMO ALTERAR OS TEXTOS (COPY)
+------------------------------------------------------------
+Todos os textos estão localizados no arquivo 'index.html'. 
+Abra o arquivo e procure pelas seguintes tags:
+
+* Título Principal: Texto dentro de <h1>.
+* Subtítulos/Descrições: Texto dentro de tags <p>.
+* Benefícios e Planos: Tags <h3>.
+* Botões: Texto dentro das tags <a> com classe 'btn-cta'.
+
+DICA: Use 'Ctrl + F' no seu editor para buscar a palavra que deseja mudar.
+
+2. COMO SUBSTITUIR IMAGENS, LOGOS E VÍDEO
+------------------------------------------------------------
+As imagens estão localizadas na pasta 'midia/'.
+
+* Logos de Parceiros: Salve os arquivos na pasta 'midia/' e 
+  atualize o nome no HTML em <img src="midia/seu-logo.png">.
+* Favicon (Ícone da aba): Substitua o arquivo 'favicon.jpg' 
+  na pasta 'midia' por um novo com o mesmo nome.
+* Vídeo do Hero: Localize a tag <iframe> e substitua o link 
+  em 'src="LINK_DO_YOUTUBE"'.
+
+* TAMANHOS RECOMENDADOS:
+  - Logos: Altura de 240px (Formato .png com fundo transparente).
+  - Favicon: 32x32px ou 48x48px.
+
+3. COMO ALTERAR AS CORES DA MARCA (CSS)
+------------------------------------------------------------
+A identidade visual é controlada por variáveis no arquivo 'style.css'.
+Localize o bloco ':root' no topo do arquivo para mudar as cores:
+
+* --primary: #6366f1; (Roxo principal)
+* --secondary: #ec4899; (Rosa de destaque)
+* --background: #0f172a; (Cor do fundo escuro)
+
+4. REDES SOCIAIS E RODAPÉ
+------------------------------------------------------------
+No final do arquivo 'index.html', localize a tag <footer>.
+* Links: Altere o endereço entre as aspas em 'href="SEU_LINK_AQUI"'.
+* Texto: Altere o nome do desenvolvedor ou ano diretamente no texto.
+
+5. COMO COLOCAR NO AR (NETLIFY)
+------------------------------------------------------------
+Este projeto está "Netlify Ready" (Pronto para Netlify):
+1. Comprima a pasta do projeto (index, style, script e midia) em um .ZIP.
+2. Acesse app.netlify.com e faça login.
+3. Arraste o arquivo .ZIP para a área de "Deploy".
+4. O site estará online com link seguro (HTTPS) em segundos.
+
+============================================================
